@@ -26,7 +26,8 @@ def chatbot():
             mejor_puntaje = puntaje
             mejor_respuesta = item["respuesta"]
 
-    return jsonify({"respuesta": mejor_respuesta})
+    return jsonify({"respuesta": mejor_respuesta,
+                    "sugerencias":item.get("sugerencias", [])})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
