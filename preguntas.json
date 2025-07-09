@@ -1,0 +1,106 @@
+[
+  {
+    "pregunta": "hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy? 😊"
+  },
+  {
+    "pregunta": "buenas",
+    "respuesta": "¡Bienvenido! ¿Qué quieres saber sobre el programa? Estoy aquí para ayudarte."
+  },
+  {
+    "pregunta": "gracias",
+    "respuesta": "¡De nada! Siempre es un gusto ayudarte 💬"
+  },
+  {
+    "pregunta": "adiós",
+    "respuesta": "¡Hasta pronto! Espero que cumplas tu sueño de ir al campamento 🇺🇸"
+  },
+  {
+    "pregunta": "qué puedes hacer",
+    "respuesta": "Puedo responder todas tus dudas sobre requisitos, entrevistas, visado, vuelos, pagos y mucho más. ¡Pregunta sin miedo!"
+  },
+  {
+    "pregunta": "cómo funciona el proceso",
+    "respuesta": "El proceso incluye 8 pasos: registro, entrevista, preparación del perfil, matching con empleadores, confirmación de empleo, visado J-1 y preparación para tu viaje. ¿Quieres saber más sobre algún paso?"
+  },
+  {
+    "pregunta": "¿en qué consiste el proceso y cuánto dura?",
+    "respuesta": "Todo el proceso puede durar desde el momento que te registras hasta el día que viajas. Incluye entrevista, matching con empleadores, visado J-1 y preparación. Suele completarse en pocos meses si cumples los requisitos."
+  },
+  {
+    "pregunta": "¿dónde y cómo me hacen la entrevista inicial?",
+    "respuesta": "Si aplicas desde un centro con convenio, será presencial. De lo contrario, se hace por Meet, Zoom o WhatsApp. ¡Nos adaptamos a ti!"
+  },
+  {
+    "pregunta": "¿para qué sirve la entrevista?",
+    "respuesta": "Para conocerte, evaluar tu perfil, nivel de inglés y preparación. Así podemos conectarte con los campamentos más adecuados."
+  },
+  {
+    "pregunta": "¿por qué tengo que pagar por la entrevista inicial?",
+    "respuesta": "Porque es el primer paso formal del proceso. Ese pago activa tu candidatura, incluye soporte personalizado y el acceso al sistema de matching con empleadores."
+  },
+  {
+    "pregunta": "¿cuánto cuesta la entrevista inicial?",
+    "respuesta": "Tiene un coste de 20 €, se paga en línea, y no es reembolsable. Es requisito indispensable para agendar tu entrevista."
+  },
+  {
+    "pregunta": "¿qué edad debo tener para aplicar?",
+    "respuesta": "Debes tener al menos 18 años cumplidos antes del 14 de junio del año en que viajas al campamento."
+  },
+  {
+    "pregunta": "¿debo estar estudiando o tener títulos?",
+    "respuesta": "No, no es obligatorio. Aunque tener experiencia o certificados como socorrismo suma puntos, lo más importante es tu actitud."
+  },
+  {
+    "pregunta": "¿cómo me registro y cuánto tiempo tengo?",
+    "respuesta": "Puedes registrarte en el sitio web. Cuanto antes lo hagas, mejor precio tendrás: VIP (jun–ago): 329 €, Early Bird (septiembre): 349 €."
+  },
+  {
+    "pregunta": "¿qué pagos hay que hacer?",
+    "respuesta": "Hay 3 etapas: registro (29–49 €), envío a USA (100–200 €) y confirmación/documentación (200 €)."
+  },
+  {
+    "pregunta": "¿qué certificados necesito?",
+    "respuesta": "Necesitarás un certificado médico y uno de antecedentes penales (aproximadamente 4 €)."
+  },
+  {
+    "pregunta": "¿cómo y cuándo obtengo el visado?",
+    "respuesta": "Una vez te contrata un campamento, gestionas el visado J-1 (cuesta 185 USD). Se tramita en la Embajada de EE.UU. en Madrid y tarda entre 5 y 10 días."
+  },
+  {
+    "pregunta": "¿me ayudan con los vuelos?",
+    "respuesta": "No se reservan por ti, pero sí se te asesora. Los precios suelen oscilar entre 400 € y 800 €."
+  },
+  {
+    "pregunta": "¿hay seguro médico?",
+    "respuesta": "¡Sí! El sponsor proporciona seguro durante tu estancia (hasta 120 días) y puedes extenderlo si lo necesitas."
+  },
+  {
+    "pregunta": "¿cómo me contratan?",
+    "respuesta": "Tu perfil se envía a campamentos y resorts en EE.UU. Si les interesas, te llaman para entrevista. Si te eligen, ¡te contratan! No olvides revisar tu email (y el spam también)."
+  },
+  {
+    "pregunta": "¿qué pasa si no me contratan o rechazo un puesto?",
+    "respuesta": "Si no consigues plaza, te reembolsan el segundo pago (menos 5 €) y el primero queda como crédito para la próxima temporada. Si rechazas una oferta, no hay devolución."
+  },
+  {
+    "pregunta": "¿cuánto me pagan?",
+    "respuesta": "Se garantiza un mínimo de 2 250 USD por todo el programa (antes de impuestos). Puede ser más si tienes experiencia o certificaciones."
+  },
+  {
+    "pregunta": "¿cuánto dura el campamento?",
+    "respuesta": "Dura entre 7 y 9 semanas, generalmente desde mediados de junio hasta mediados de agosto. Debes estar disponible antes del 15 de junio de 2026."
+  },
+  {
+    "pregunta": "¿puedo viajar después del campamento?",
+    "respuesta": "¡Sí! Tu visado J-1 te da un periodo de gracia de 30 días para viajar por EE.UU. después del programa."
+  },
+  {
+    "pregunta": "¿puedo usar teléfono o internet en el campamento?",
+    "respuesta": "Depende del campamento. Algunos tienen restricciones, otros permiten uso en horarios libres. Siempre hay opciones básicas disponibles."
+  },
+  {
+    "pregunta": "¿qué hago si tengo un problema en EE.UU.?",
+    "respuesta": "Puedes hablar con el director del campamento o tu sponsor. Tendrás sus datos de contacto siempre disponibles para recibir apoyo."
+  }
+]
