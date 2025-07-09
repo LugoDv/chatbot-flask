@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
 from fuzzywuzzy import fuzz
+from flask_cors import CORS
 import json ,os
 
 app = Flask(__name__)
+CORS(app)
 
 # Carga el archivo JSON una vez al iniciar
 with open("preguntas.json", "r", encoding="utf-8") as f:
