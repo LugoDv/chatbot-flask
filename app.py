@@ -16,18 +16,30 @@ def chatbot():
     pregunta_usuario = datos.get("message", "").lower()
 
     mejor_puntaje = 0
-    mejor_respuesta = "Lo siento, no tengo una respuesta para eso aún."
+    mejor_respuesta = ""
+    sugerencias = []
 
     for item in base:
         pregunta_guardada = item["pregunta"].lower()
         puntaje = fuzz.token_set_ratio(pregunta_usuario, pregunta_guardada)
 
-        if puntaje > mejor_puntaje and puntaje > 70:
+        if puntaje > mejor_puntaje:
             mejor_puntaje = puntaje
             mejor_respuesta = item["respuesta"]
+            sugerencias = item.get("sugerencias", [])
 
-    return jsonify({"respuesta": mejor_respuesta,
-                    "sugerencias":item.get("sugerencias", [])})
+    if mejor_puntaje < 60:
+        mejor_respuesta = "🤔 No tengo una respuesta clara para eso. Pero puedes preguntarme sobre visado, entrevistas, requisitos, pagos... O escribirnos por WhatsApp 👉 https://wa.me/34TU_NUMERO"
+        sugerencias = [
+            "¿Cómo es la entrevista?",
+            "¿Qué documentos necesito?",
+            "¿Cuánto cuesta el programa?"
+        ]
+
+    return jsonify({
+        "respuesta": mejor_respuesta,
+        "sugerencias": sugerencias
+    })
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

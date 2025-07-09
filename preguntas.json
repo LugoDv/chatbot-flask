@@ -1,4 +1,64 @@
 [
+    {
+  "pregunta": "holaaa",
+  "respuesta": "¡Hola! 👋 Qué gusto tenerte aquí. ¿Te interesa conocer los pasos del programa, cómo es la entrevista o el proceso del visado?",
+  "tema": "General",
+  "sugerencias": [
+    "¿Cómo es el proceso?",
+    "¿Qué documentos necesito?",
+    "¿Cuánto cuesta la entrevista?"
+  ]
+},
+{
+  "pregunta": "que tal",
+  "respuesta": "¡Todo bien por aquí, gracias! 😊 Cuéntame qué necesitas saber sobre el programa Global Leaders.",
+  "tema": "General",
+  "sugerencias": [
+    "¿Qué edad necesito?",
+    "¿Hay seguro médico?",
+    "¿Me ayudan con los vuelos?"
+  ]
+},
+{
+  "pregunta": "me puedes ayudar",
+  "respuesta": "¡Claro que sí! Estoy aquí para resolver tus dudas sobre entrevistas, visado, pagos y más. ¿Sobre qué quieres saber primero?",
+  "tema": "General",
+  "sugerencias": [
+    "¿Cómo es la entrevista?",
+    "¿Qué certificados necesito?",
+    "¿Qué pasa si no me contratan?"
+  ]
+},
+{
+  "pregunta": "estás ahí",
+  "respuesta": "¡Siempre! 👀 ¿Te gustaría saber sobre requisitos, el proceso, costos o cómo aplicar?",
+  "tema": "General",
+  "sugerencias": [
+    "¿Necesito ser estudiante?",
+    "¿Dónde saco el visado?",
+    "¿Qué pasa si rechazo una oferta?"
+  ]
+},
+{
+  "pregunta": "buen día",
+  "respuesta": "¡Buenos días! ☀️ ¿Quieres que te cuente cómo funciona todo o te interesa algún paso del programa?",
+  "tema": "General",
+  "sugerencias": [
+    "¿Qué pasos debo seguir?",
+    "¿Cuánto dura el programa?",
+    "¿Qué certificados necesito?"
+  ]
+},
+{
+  "pregunta": "¿qué puedes hacer?",
+  "respuesta": "🧠 Puedo responderte sobre entrevistas, pagos, requisitos, visado, vuelos y cualquier parte del proceso Global Leaders. ¡Pregunta sin miedo!",
+  "tema": "General",
+  "sugerencias": [
+    "¿Cuánto cuesta el visado?",
+    "¿Cómo me contratan?",
+    "¿Qué edad necesito?"
+  ]
+},
   {
     "pregunta": "¿cómo es el proceso completo?",
     "respuesta": "💡 El proceso consta de 8 pasos, desde tu registro inicial hasta tu preparación final para viajar a EE.UU. ¿Quieres que te los enumere uno por uno?",
@@ -114,5 +174,59 @@
     "respuesta": "📲 Por supuesto. Puedes escribir directamente a nuestro equipo y te atenderán con gusto vía WhatsApp 👉 https://wa.me/34TU_NUMERO",
     "tema": "Contacto",
     "sugerencias": []
-  }
+  },
+  {
+  "pregunta": "gracias",
+  "respuesta": "¡De nada! 😊 Si surge cualquier otra duda, aquí estaré. También puedes escribirnos por WhatsApp si prefieres hablar con un asesor 👉 https://wa.me/34TU_NUMERO",
+  "tema": "Despedida",
+  "sugerencias": [
+    "¿Cómo me registro?",
+    "¿Qué documentos necesito?",
+    "¿Qué pasa si no me contratan?"
+  ]
+},
+{
+  "pregunta": "adiós",
+  "respuesta": "¡Hasta pronto! 👋 Espero que vivas una experiencia increíble en Global Leaders. Si necesitas algo más, aquí me encuentras.",
+  "tema": "Despedida",
+  "sugerencias": []
+},
+{
+  "pregunta": "nos vemos",
+  "respuesta": "¡Claro que sí! 😄 Te espero para ayudarte cuando quieras seguir explorando el programa.",
+  "tema": "Despedida",
+  "sugerencias": []
+},
+{
+  "pregunta": "estoy nervioso",
+  "respuesta": "😌 Es normal sentir nervios antes de una experiencia internacional. Nuestro equipo te acompaña en cada paso, desde entrevistas hasta tu llegada a EE.UU.",
+  "tema": "Emocional",
+  "sugerencias": [
+    "¿Me ayudan con el viaje?",
+    "¿Qué pasa en la entrevista?",
+    "¿Hay soporte en EE.UU.?"
+  ]
+},
+{
+  "pregunta": "tengo dudas",
+  "respuesta": "¡Estoy aquí para resolverlas! 💬 Pregúntame sobre visado, entrevistas, documentación, pagos... O si prefieres atención personalizada, entra aquí 👉 https://wa.me/34TU_NUMERO",
+  "tema": "Emocional",
+  "sugerencias": [
+    "¿Cómo funciona el visado?",
+    "¿Qué certificados necesito?",
+    "¿Me ayudan con los vuelos?"
+  ]
+},
+{
+  "pregunta": "tengo miedo de ir",
+  "respuesta": "🫂 Te entiendo. Viajar a otro país da vértigo al principio, pero estarás respaldado por nuestro equipo y tendrás apoyo constante. ¡Te prometo que valdrá la pena!",
+  "tema": "Emocional",
+  "sugerencias": [
+    "¿Hay soporte si tengo un problema?",
+    "¿Puedo contactar al sponsor?",
+    "¿Cómo es la vida en el campamento?"
+  ]
+}
+
+
 ]
