@@ -188,12 +188,19 @@
                 statusDiv.textContent = '🔴 No conectado - Ejecuta: python app.py';
             }
         }
-        
+
         function addMessage(message, isUser) {
             const chatContainer = document.getElementById('chatContainer');
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-            messageDiv.textContent = message;
+            
+            if (isUser) {
+                messageDiv.textContent = message;
+            } else {
+                // Para mensajes del bot, usar directamente innerHTML ya que viene con HTML procesado
+                messageDiv.innerHTML = message;
+            }
+            
             chatContainer.appendChild(messageDiv);
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
