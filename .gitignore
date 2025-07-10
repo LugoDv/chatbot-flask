@@ -1,0 +1,19 @@
+# Archivos que NO deben ir a producción
+test_chatbot.py
+test_validation.py
+test_interface.html
+run_tests.sh
+faqs.txt
+preguntas_organized.json
+
+# Entornos virtuales
+venv/
+__pycache__/
+*.pyc
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs de desarrollo
+*.log
