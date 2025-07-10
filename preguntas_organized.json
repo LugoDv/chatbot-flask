@@ -61,7 +61,7 @@
   },
   {
     "pregunta": "no encontré mi duda aquí",
-    "respuesta": "🤔 Estoy aprendiendo cada día, pero si tu duda es muy específica te recomiendo hablar con un asesor por WhatsApp 👉 https://wa.me/34640030604",
+    "respuesta": "🤔 Estoy aprendiendo cada día, pero si tu duda es muy específica te recomiendo hablar con un asesor por WhatsApp 👉 https://wa.me/34TU_NUMERO",
     "tema": "General",
     "sugerencias": [
       "¿Cómo contacto con un asesor?",
@@ -140,16 +140,6 @@
     ]
   },
   {
-    "pregunta": "¿cuánto cuesta la entrevista?",
-    "respuesta": "💰 La entrevista inicial tiene un coste de 20 €. Este pago activa tu proceso de selección y te da acceso al soporte personalizado para todo el programa.",
-    "tema": "Entrevista",
-    "sugerencias": [
-      "¿Por qué se paga la entrevista?",
-      "¿Qué incluye la entrevista?",
-      "¿Cómo se divide el pago del programa?"
-    ]
-  },
-  {
     "pregunta": "¿por qué se paga la entrevista?",
     "respuesta": "💳 Porque es el primer paso formal de tu candidatura. Ese pago activa tu acceso al proceso de matching, soporte personalizado y validación internacional. No es una charla informal, ¡es el inicio del viaje!",
     "tema": "Entrevista",
@@ -191,7 +181,7 @@
   },
   {
     "pregunta": "¿Cómo se divide el pago del programa?",
-    "respuesta": "💰 El pago se reparte en varias fases:\n\n1. Registro en línea: 29–49 €\n2. Entrevista inicial: 20 €\n3. Pago administrativo (video y plataforma): 150 €\n4. Envío de candidatura a EE.UU.: 100–200 €\n5. Confirmación y documentación: 200 € (tras oferta de empleo)\n\nTotal final según cuándo te inscribas: desde 329 € (VIP) hasta 349 € (Early Bird) y más.",
+    "respuesta": "💰 El pago se reparte en varias fases:\n\n1. Registro en línea: 29–49 €\n2. Entrevista inicial: 20 €\n3. Pago administrativo (video y plataforma): 150 €\n4. Envío de la candidatura a EE.UU.: 100–200 €\n5. Pago final tras oferta de empleo (varía según fecha de inscripción)",
     "tema": "Costes",
     "sugerencias": [
       "¿Cuánto cuesta la entrevista?",
@@ -200,23 +190,13 @@
     ]
   },
   {
-    "pregunta": "¿Cuánto cuesta?",
-    "respuesta": "💰 El coste total del programa varía según cuándo te inscribas:\n\n• VIP (Junio-Agosto): desde 329 €\n• Early Bird (Septiembre): desde 349 €\n• Precio estándar: hasta 449 €\n\nEste precio incluye gestión, entrevista, video, plataforma y documentación completa. ¡Cuanto antes te inscribas, más ahorras!",
-    "tema": "Costes",
-    "sugerencias": [
-      "¿Cómo se divide el pago del programa?",
-      "¿Cuándo es más barato inscribirse?",
-      "¿Qué incluye el precio?"
-    ]
-  },
-  {
     "pregunta": "¿cuándo es más barato inscribirse?",
-    "respuesta": "💡 Cuanto antes te inscribas, mejores precios obtienes:\n\n• Junio-Agosto (VIP): 329 €\n• Septiembre (Early Bird): 349 €\n• Y así sucesivamente...\n\n¡La inscripción temprana tiene sus ventajas! Los precios van aumentando progresivamente.\n\n📝 Inscríbete aquí: https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform",
+    "respuesta": "💡 Cuanto antes te inscribas, mejores precios obtienes:\n\n• Junio-Agosto (VIP): 329 €\n• Septiembre (Early Bird): 349 €\n• Y así sucesivamente...\n\n¡La inscripción temprana tiene sus ventajas!",
     "tema": "Costes",
     "sugerencias": [
       "¿Cómo me registro?",
-      "¿Hasta cuándo puedo inscribirme?",
-      "¿Cómo se divide el pago del programa?"
+      "¿Qué incluye cada precio?",
+      "¿Hasta cuándo puedo inscribirme?"
     ]
   },
   {
@@ -364,7 +344,7 @@
   },
   {
     "pregunta": "quiero hablar con alguien",
-    "respuesta": "📲 Por supuesto. Puedes escribir directamente a nuestro equipo y te atenderán con gusto vía WhatsApp 👉 https://wa.me/34640030604",
+    "respuesta": "📲 Por supuesto. Puedes escribir directamente a nuestro equipo y te atenderán con gusto vía WhatsApp 👉 https://wa.me/34TU_NUMERO",
     "tema": "Contacto",
     "sugerencias": []
   },
@@ -380,7 +360,7 @@
   },
   {
     "pregunta": "tengo dudas",
-    "respuesta": "¡Estoy aquí para resolverlas! 💬 Pregúntame sobre visado, entrevistas, documentación, pagos... O si prefieres atención personalizada, entra aquí 👉 https://wa.me/34640030604",
+    "respuesta": "¡Estoy aquí para resolverlas! 💬 Pregúntame sobre visado, entrevistas, documentación, pagos... O si prefieres atención personalizada, entra aquí 👉 https://wa.me/34TU_NUMERO",
     "tema": "Emocional",
     "sugerencias": [
       "¿Cómo funciona el visado?",
@@ -400,7 +380,7 @@
   },
   {
     "pregunta": "gracias",
-    "respuesta": "¡De nada! 😊 Si surge cualquier otra duda, aquí estaré. También puedes escribirnos por WhatsApp si prefieres hablar con un asesor 👉 https://wa.me/34640030604",
+    "respuesta": "¡De nada! 😊 Si surge cualquier otra duda, aquí estaré. También puedes escribirnos por WhatsApp si prefieres hablar con un asesor 👉 https://wa.me/34TU_NUMERO",
     "tema": "Despedida",
     "sugerencias": [
       "¿Cómo me registro?",
@@ -419,93 +399,5 @@
     "respuesta": "¡Claro que sí! 😄 Te espero para ayudarte cuando quieras seguir explorando el programa.",
     "tema": "Despedida",
     "sugerencias": []
-  },
-  {
-    "pregunta": "¿cómo me registro?",
-    "respuesta": "📝 ¡Empezar es muy fácil! Completa tu inscripción aquí 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\nSi cumples los requisitos de edad y disponibilidad, te enviaremos un nuevo formulario para conocer tu experiencia y talentos.",
-    "tema": "Proceso",
-    "sugerencias": [
-      "¿Qué necesito para empezar?",
-      "¿Cuándo es más barato inscribirse?",
-      "¿Hasta cuándo puedo inscribirme?"
-    ]
-  },
-  {
-    "pregunta": "quiero inscribirme",
-    "respuesta": "🎉 ¡Perfecto! Te ayudo con tu inscripción. Completa el formulario aquí 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\n¡Es el primer paso hacia tu aventura en Estados Unidos!",
-    "tema": "Proceso",
-    "sugerencias": [
-      "¿Qué edad necesito?",
-      "¿Cuándo es más barato inscribirse?",
-      "¿Qué certificados necesito?"
-    ]
-  },
-  {
-    "pregunta": "¿para qué sirve la entrevista?",
-    "respuesta": "📋 Utilizamos la entrevista para preparar tu informe que se enviará a los directores de campamentos. Evaluamos tu disponibilidad, habilidades y nivel de inglés para conectarte con los campamentos que más se adecuen a tu perfil e intereses.",
-    "tema": "Entrevista",
-    "sugerencias": [
-      "¿Qué evalúan en la entrevista?",
-      "¿Cómo es la entrevista?",
-      "¿Qué pasa después de la entrevista?"
-    ]
-  },
-  {
-    "pregunta": "¿qué pasa después de la entrevista?",
-    "respuesta": "🚀 Si tu perfil es aprobado, pasas al siguiente paso: la preparación de tu aplicación. Tendrás soporte para realizar tu video de presentación y acceso a la plataforma de matching con campamentos.",
-    "tema": "Entrevista",
-    "sugerencias": [
-      "¿Para qué sirve la entrevista?",
-      "¿Cuánto tarda todo el proceso?",
-      "¿Qué incluye el pago de 150 €?"
-    ]
-  },
-  {
-    "pregunta": "¿cómo y cuándo obtengo el visado?",
-    "respuesta": "🏛️ Una vez contratado por el campamento, te enviamos toda la documentación para ir a la Embajada de EE.UU. en Madrid. El visado J-1 cuesta 185 USD y suele tardar entre 5-10 días tras la cita.",
-    "tema": "Visado",
-    "sugerencias": [
-      "¿Cuánto cuesta el visado?",
-      "¿Dónde se hace el trámite?",
-      "¿Qué documentos necesito?"
-    ]
-  },
-  {
-    "pregunta": "¿hasta cuándo puedo inscribirme?",
-    "respuesta": "⏰ Puedes inscribirte durante todo el año, pero recuerda que cuanto antes lo hagas, mejores precios obtienes. Los precios van aumentando progresivamente según la fecha de inscripción.\n\n📝 Inscríbete aquí: https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform",
-    "tema": "Costes",
-    "sugerencias": [
-      "¿Cuándo es más barato inscribirse?",
-      "¿Cómo me registro?",
-      "¿Qué pagos hay que hacer?"
-    ]
-  },
-  {
-    "pregunta": "cómo me apunto",
-    "respuesta": "📋 ¡Súper fácil! Solo tienes que rellenar este formulario 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\n¡En pocos minutos habrás dado el primer paso hacia tu experiencia en EE.UU.! ",
-    "tema": "Proceso",
-    "sugerencias": [
-      "¿Qué documentos necesito?",
-      "¿Cuánto cuesta la entrevista?",
-      "¿Cuándo es más barato inscribirse?"
-    ]
-  },
-  {
-    "pregunta": "cuál es el whatsapp",
-    "respuesta": "📱 Nuestro WhatsApp para contacto directo es: +34 640 030 604\n\nO puedes escribirnos directamente aquí 👉 https://wa.me/34640030604",
-    "tema": "Contacto",
-    "sugerencias": [
-      "Quiero hablar con alguien",
-      "¿Tienen atención personalizada?"
-    ]
-  },
-  {
-    "pregunta": "número de teléfono",
-    "respuesta": "📞 Para atención personalizada, escríbenos por WhatsApp: +34 640 030 604\n\n👉 Enlace directo: https://wa.me/34640030604",
-    "tema": "Contacto", 
-    "sugerencias": [
-      "Quiero hablar con alguien",
-      "¿Cómo contacto con un asesor?"
-    ]
   }
 ]

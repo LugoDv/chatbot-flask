@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chatbot Global Leaders</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .chat-container {
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            height: 400px;
+            overflow-y: auto;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .user-message {
+            background-color: #3498db;
+            color: white;
+            text-align: right;
+        }
+        .bot-message {
+            background-color: #e8f5e8;
+            color: #2c3e50;
+        }
+        .input-container {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .suggestions {
+            margin-top: 10px;
+        }
+        .suggestion-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        .suggestion-btn:hover {
+            background-color: #d5dbdb;
+        }
+        .test-buttons {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .test-btn {
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .test-btn:hover {
+            background-color: #c0392b;
+        }
+        .status {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .status.connected {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status.disconnected {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Test Chatbot Global Leaders</h1>
+        
+        <div id="status" class="status disconnected">
+            🔴 Comprobando conexión...
+        </div>
+        
+        <div class="test-buttons">
+            <h3>Tests Rápidos:</h3>
+            <button class="test-btn" onclick="testQuick('hola')">Saludo</button>
+            <button class="test-btn" onclick="testQuick('como es la entrevista')">Entrevista</button>
+            <button class="test-btn" onclick="testQuick('cuanto cuesta')">Costes</button>
+            <button class="test-btn" onclick="testQuick('que edad necesito')">Requisitos</button>
+            <button class="test-btn" onclick="testQuick('como gestiono el visado')">Visado</button>
+            <button class="test-btn" onclick="testQuick('asdfghjkl')">Test Error</button>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                ¡Hola! Soy el chatbot de Global Leaders. Escribe una pregunta para probar.
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Escribe tu pregunta aquí..." 
+                   onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000/chatbot';
+        
+        // Verificar conexión al cargar
+        window.onload = function() {
+            checkConnection();
+        };
+        
+        function checkConnection() {
+            fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({message: "test"})
+            })
+            .then(response => {
+                if (response.ok) {
+                    updateStatus(true);
+                } else {
+                    updateStatus(false);
+                }
+            })
+            .catch(error => {
+                updateStatus(false);
+            });
+        }
+        
+        function updateStatus(connected) {
+            const statusDiv = document.getElementById('status');
+            if (connected) {
+                statusDiv.className = 'status connected';
+                statusDiv.textContent = '🟢 Conectado al servidor';
+            } else {
+                statusDiv.className = 'status disconnected';
+                statusDiv.textContent = '🔴 No conectado - Ejecuta: python app.py';
+            }
+        }
+        
+        function addMessage(message, isUser) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            messageDiv.textContent = message;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function addSuggestions(suggestions) {
+            if (!suggestions || suggestions.length === 0) return;
+            
+            const chatContainer = document.getElementById('chatContainer');
+            const suggestionsDiv = document.createElement('div');
+            suggestionsDiv.className = 'suggestions';
+            
+            suggestions.forEach(suggestion => {
+                const suggestionBtn = document.createElement('span');
+                suggestionBtn.className = 'suggestion-btn';
+                suggestionBtn.textContent = suggestion;
+                suggestionBtn.onclick = () => testQuick(suggestion);
+                suggestionsDiv.appendChild(suggestionBtn);
+            });
+            
+            chatContainer.appendChild(suggestionsDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            addMessage(message, true);
+            input.value = '';
+            
+            fetch(API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({message: message})
+            })
+            .then(response => response.json())
+            .then(data => {
+                addMessage(data.respuesta, false);
+                addSuggestions(data.sugerencias);
+                updateStatus(true);
+            })
+            .catch(error => {
+                addMessage('Error: No se pudo conectar con el servidor', false);
+                updateStatus(false);
+                console.error('Error:', error);
+            });
+        }
+        
+        function testQuick(message) {
+            document.getElementById('messageInput').value = message;
+            sendMessage();
+        }
+    </script>
+</body>
+</html>
