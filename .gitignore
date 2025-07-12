@@ -1,7 +1,8 @@
 # Archivos que NO deben ir a producción
 test_chatbot.py
 test_validation.py
-test_interface.html
+test_interface_multilingual.html
+test_endpoints.py
 run_tests.sh
 faqs.txt
 preguntas_organized.json

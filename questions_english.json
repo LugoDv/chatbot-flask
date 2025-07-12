@@ -1,0 +1,511 @@
+[
+  {
+    "pregunta": "hello",
+    "respuesta": "Hello! 👋 Great to have you here. Are you interested in knowing the program steps, how the interview works, or the visa process?",
+    "tema": "General",
+    "sugerencias": [
+      "How is the process?",
+      "What documents do I need?",
+      "How much does the interview cost?"
+    ]
+  },
+  {
+    "pregunta": "how are you",
+    "respuesta": "Everything's good here, thanks! 😊 Tell me what you need to know about the Global Leaders program.",
+    "tema": "General",
+    "sugerencias": [
+      "What age do I need?",
+      "Is there medical insurance?",
+      "Do you help with flights?"
+    ]
+  },
+  {
+    "pregunta": "can you help me",
+    "respuesta": "Of course! I'm here to solve your doubts about interviews, visas, payments and more. What would you like to know first?",
+    "tema": "General",
+    "sugerencias": [
+      "How is the interview?",
+      "What certificates do I need?",
+      "What happens if I don't get hired?"
+    ]
+  },
+  {
+    "pregunta": "are you there",
+    "respuesta": "Always! 👀 Would you like to know about requirements, the process, costs or how to apply?",
+    "tema": "General",
+    "sugerencias": [
+      "Do I need to be a student?",
+      "Where do I get the visa?",
+      "What happens if I reject an offer?"
+    ]
+  },
+  {
+    "pregunta": "good morning",
+    "respuesta": "Good morning! ☀️ Want me to tell you how everything works or are you interested in any specific step of the program?",
+    "tema": "General",
+    "sugerencias": [
+      "What steps should I follow?",
+      "How long does the program last?",
+      "What certificates do I need?"
+    ]
+  },
+  {
+    "pregunta": "what can you do",
+    "respuesta": "🧠 I can answer about interviews, payments, requirements, visas, flights and any part of the Global Leaders process. Ask away!",
+    "tema": "General",
+    "sugerencias": [
+      "How much does the visa cost?",
+      "How do I get hired?",
+      "What age do I need?"
+    ]
+  },
+  {
+    "pregunta": "I didn't find my question here",
+    "respuesta": "🤔 I'm learning every day, but if your question is very specific I recommend talking to an advisor via WhatsApp 👉 https://wa.me/34640030604",
+    "tema": "General",
+    "sugerencias": [
+      "How do I contact an advisor?",
+      "Do you have personalized attention?",
+      "I want to talk to someone"
+    ]
+  },
+  {
+    "pregunta": "how is the complete process",
+    "respuesta": "💡 The process consists of 8 steps, from your initial registration to your final preparation to travel to the US. Want me to list them one by one?",
+    "tema": "Proceso",
+    "sugerencias": [
+      "What are the program steps?",
+      "How long does the whole process take?",
+      "What do I need to start?"
+    ]
+  },
+  {
+    "pregunta": "what are the program steps",
+    "respuesta": "🚀 Here are the key steps:\n1. Registration\n2. Interview\n3. Profile validation\n4. Application preparation\n5. Employer matching\n6. Employment confirmation\n7. J-1 Visa\n8. Travel preparation\n\nWant to know more about any of them?",
+    "tema": "Proceso",
+    "sugerencias": [
+      "How is the interview?",
+      "Where do I get the visa?",
+      "What payments do I need to make?"
+    ]
+  },
+  {
+    "pregunta": "how long does the whole process take",
+    "respuesta": "⏰ The complete process can take several months, depending on when you register. Once hired, the visa takes 5-10 days after the embassy appointment.",
+    "tema": "Proceso",
+    "sugerencias": [
+      "How long does the visa take?",
+      "When should I start?",
+      "What happens if I'm late?"
+    ]
+  },
+  {
+    "pregunta": "how is the interview",
+    "respuesta": "🎥 The interview is done online (via Meet, Zoom or WhatsApp) and serves to know your experience, motivation, English level and personality. It's a key conversation to connect with the best camps!",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "What do they evaluate in the interview?",
+      "Where is the interview done?",
+      "Why is the interview paid?"
+    ]
+  },
+  {
+    "pregunta": "where is the interview done",
+    "respuesta": "📍 If you apply from a partner center, the interview can be in person. If not, it's done online via Meet, Zoom or WhatsApp. Both options are equally effective!",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "How is the interview?",
+      "What do they evaluate in the interview?",
+      "How long does the interview last?"
+    ]
+  },
+  {
+    "pregunta": "what do they evaluate in the interview",
+    "respuesta": "🔍 We evaluate your availability, skills, English level, experience and motivation. This information is used to prepare your report that is sent to camp directors.",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "How is the interview?",
+      "What is the interview for?",
+      "What happens after the interview?"
+    ]
+  },
+  {
+    "pregunta": "why do I have to pay for the initial interview",
+    "respuesta": "💳 The initial interview is not just a conversation: it's the first formal step of your candidacy. This payment (20 €) activates your selection process, personalized support and matching with camps. It's an investment in your future.",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "How much does the interview cost?",
+      "What does the interview include?",
+      "Is the interview refundable?"
+    ]
+  },
+  {
+    "pregunta": "how much does the interview cost",
+    "respuesta": "💰 The initial interview costs 20 €. This payment activates your selection process and gives you access to personalized support throughout the program.",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "Why is the interview paid?",
+      "What does the interview include?",
+      "How is the program payment divided?"
+    ]
+  },
+  {
+    "pregunta": "why is the interview paid",
+    "respuesta": "💳 Because it's the first formal step of your candidacy. That payment activates your access to the matching process, personalized support and international validation. It's not an informal chat, it's the start of the journey!",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "How much does the interview cost?",
+      "What happens after the interview?",
+      "What does the payment include?"
+    ]
+  },
+  {
+    "pregunta": "what age do I need",
+    "respuesta": "🎯 You must be at least 18 years old before June 14th of the year you travel to the camp in the US.",
+    "tema": "Requisitos",
+    "sugerencias": [
+      "Do I need to be a student?",
+      "What certificates do they ask for?",
+      "What if I'm 17 years old?"
+    ]
+  },
+  {
+    "pregunta": "do I need to be a student",
+    "respuesta": "📚 No, it's not mandatory. What matters is your experience, skills, attitude and motivation. Certifications like lifeguarding or activity leader do add value.",
+    "tema": "Requisitos",
+    "sugerencias": [
+      "What skills do they value?",
+      "Can I apply if I work?",
+      "What certificates do I need?"
+    ]
+  },
+  {
+    "pregunta": "what certificates do I need",
+    "respuesta": "📋 You need:\n• Medical certificate\n• Criminal background check certificate (approx. 4 €)\n\nOptional but valued:\n• Lifeguarding\n• Activity leader\n• Other activity-related certificates",
+    "tema": "Requisitos",
+    "sugerencias": [
+      "Where do I get the certificates?",
+      "How much do the certificates cost?",
+      "Are they all mandatory?"
+    ]
+  },
+  {
+    "pregunta": "how is the program payment divided",
+    "respuesta": "💰 The payment is divided into several phases:\n\n1. Online registration: 29–49 €\n2. Initial interview: 20 €\n3. Administrative payment (video and platform): 150 €\n4. Sending candidacy to US: 100–200 €\n5. Confirmation and documentation: 200 € (after job offer)\n\nFinal total depending on when you register: from 329 € (VIP) to 349 € (Early Bird) and more.",
+    "tema": "Costes",
+    "sugerencias": [
+      "How much does the interview cost?",
+      "What does the 150 € payment include?",
+      "When is it cheaper to register?"
+    ]
+  },
+  {
+    "pregunta": "how much does it cost",
+    "respuesta": "💰 The total program cost varies depending on when you register:\n\n• VIP (June-August): from 329 €\n• Early Bird (September): from 349 €\n• Standard price: up to 449 €\n\nThis price includes management, interview, video, platform and complete documentation. The earlier you register, the more you save!",
+    "tema": "Costes",
+    "sugerencias": [
+      "How is the program payment divided?",
+      "When is it cheaper to register?",
+      "What does the price include?"
+    ]
+  },
+  {
+    "pregunta": "when is it cheaper to register",
+    "respuesta": "💡 The earlier you register, the better prices you get:\n\n• June-August (VIP): 329 €\n• September (Early Bird): 349 €\n• And so on...\n\nEarly registration has its advantages! Prices increase progressively.\n\n📝 Register here: https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform",
+    "tema": "Costes",
+    "sugerencias": [
+      "How do I register?",
+      "Until when can I register?",
+      "How is the program payment divided?"
+    ]
+  },
+  {
+    "pregunta": "what does the 150 € administrative payment include",
+    "respuesta": "📋 That amount covers the management costs of your presentation video, personalized support from our team and access to the matching platform with camps.",
+    "tema": "Costes",
+    "sugerencias": [
+      "How is the program payment divided?",
+      "What services do I receive?",
+      "Is it refundable?"
+    ]
+  },
+  {
+    "pregunta": "how is the visa managed",
+    "respuesta": "📄 We send you all the documentation so you can get the J-1 visa at the US Embassy in Madrid. Want me to tell you how long it takes or the exact cost?",
+    "tema": "Visado",
+    "sugerencias": [
+      "How much does the visa cost?",
+      "Where is the embassy?",
+      "How long does the visa take?"
+    ]
+  },
+  {
+    "pregunta": "how much does the visa cost",
+    "respuesta": "💰 The J-1 visa costs approximately 185 USD. This payment is made directly at the embassy and is mandatory for all participants.",
+    "tema": "Visado",
+    "sugerencias": [
+      "How do I get the visa?",
+      "How long does it take to come out?",
+      "Where is the procedure done?"
+    ]
+  },
+  {
+    "pregunta": "where is the visa procedure done",
+    "respuesta": "🏛️ The J-1 visa procedure is done at the United States Embassy in Madrid. We provide you with all the necessary documentation for your appointment.",
+    "tema": "Visado",
+    "sugerencias": [
+      "How much does the visa cost?",
+      "What documents do I need?",
+      "How long does the visa take?"
+    ]
+  },
+  {
+    "pregunta": "how long does the visa take",
+    "respuesta": "⏱️ The J-1 visa usually takes 5 to 10 days after the appointment at the Embassy. It's important to plan with sufficient time before your trip.",
+    "tema": "Visado",
+    "sugerencias": [
+      "Where is the procedure done?",
+      "What happens if it's delayed?",
+      "When should I apply for it?"
+    ]
+  },
+  {
+    "pregunta": "how much do I get paid at the camp",
+    "respuesta": "💵 You will receive a guaranteed minimum salary of 2,250 USD before taxes for the entire program. Some camps may offer more depending on your experience or certifications.",
+    "tema": "Contratación",
+    "sugerencias": [
+      "Do you help with matching?",
+      "What happens if I reject an offer?",
+      "How do I get hired?"
+    ]
+  },
+  {
+    "pregunta": "how do I get hired",
+    "respuesta": "🤝 Your profile is sent to camps in the US, they contact you directly and, if you pass their interview, they hire you. Check your email regularly, including the spam folder!",
+    "tema": "Contratación",
+    "sugerencias": [
+      "What happens if I don't get hired?",
+      "Can I reject an offer?",
+      "Do you help with matching?"
+    ]
+  },
+  {
+    "pregunta": "what happens if I don't get hired",
+    "respuesta": "📦 If you don't get a position, we refund your second payment (minus 5 € expenses). Additionally, your first payment remains as credit for next season.",
+    "tema": "Contratación",
+    "sugerencias": [
+      "Can I reject an offer?",
+      "How do I get hired?",
+      "Do you help with matching?"
+    ]
+  },
+  {
+    "pregunta": "can I reject an offer",
+    "respuesta": "⚠️ Yes, but keep in mind that if you reject a position after receiving it, there is no refund. It's important to consider each offer carefully before deciding.",
+    "tema": "Contratación",
+    "sugerencias": [
+      "What happens if I don't get hired?",
+      "How do I evaluate an offer?",
+      "Can I ask for more information?"
+    ]
+  },
+  {
+    "pregunta": "how long does the program last",
+    "respuesta": "📅 The program lasts approximately 7 to 9 weeks, from mid-June to mid-August. You must be available from before June 15, 2026.",
+    "tema": "Duración",
+    "sugerencias": [
+      "When does the program start?",
+      "Can I travel after finishing?"
+    ]
+  },
+  {
+    "pregunta": "can I travel after finishing the program",
+    "respuesta": "✈️ Yes. The J-1 visa includes a grace period of up to 30 days after the last day of contract so you can travel within the US.",
+    "tema": "Duración",
+    "sugerencias": ["How long does the program last?", "What does the insurance cover?"]
+  },
+  {
+    "pregunta": "is there medical insurance during the program",
+    "respuesta": "🏥 The sponsor provides medical insurance during the entire stay (up to 120 days). There are also extension options if you want to travel longer.",
+    "tema": "Seguro",
+    "sugerencias": ["What does the insurance cover?", "Can I extend it?"]
+  },
+  {
+    "pregunta": "how is life at the camp",
+    "respuesta": "🏕️ The daily routine includes activity groups, community meals and team tasks. Phone or internet use is usually restricted to free time; you'll have access for emergencies and basic communication.",
+    "tema": "Vida",
+    "sugerencias": ["Can I use the phone?", "How are the meals?"]
+  },
+  {
+    "pregunta": "can I use the phone at camp",
+    "respuesta": "📱 It depends on the camp: some restrict use, others allow access during free time. There are always phones or internet available for basic needs and emergencies.",
+    "tema": "Vida",
+    "sugerencias": [
+      "How is life at the camp?",
+      "What do I do in emergencies?",
+      "Can I contact my family?"
+    ]
+  },
+  {
+    "pregunta": "do you help with flights",
+    "respuesta": "✈️ Sure. Although we don't book directly for you, we advise you throughout the process. The average flight cost ranges between 400 € and 800 €.",
+    "tema": "Viaje",
+    "sugerencias": [
+      "Can I travel after the program?",
+      "Is there medical insurance?",
+      "When should I buy the flight?"
+    ]
+  },
+  {
+    "pregunta": "if I have any problem in the US who do I contact",
+    "respuesta": "🆘 You have three support channels:\n\n• The camp director, available for emergencies\n• Our official sponsor, whose contact details we provide before you travel\n• Our team, always accessible",
+    "tema": "Soporte",
+    "sugerencias": ["How do I contact the sponsor?", "Who is my contact person?"]
+  },
+  {
+    "pregunta": "I want to talk to someone",
+    "respuesta": "📲 Of course. You can write directly to our team and they'll gladly assist you via WhatsApp 👉 https://wa.me/34640030604",
+    "tema": "Contacto",
+    "sugerencias": []
+  },
+  {
+    "pregunta": "I'm nervous",
+    "respuesta": "😌 It's normal to feel nervous before an international experience. Our team accompanies you every step of the way, from interviews to your arrival in the US.",
+    "tema": "Emocional",
+    "sugerencias": [
+      "Do you help with the trip?",
+      "What happens in the interview?",
+      "Is there support in the US?"
+    ]
+  },
+  {
+    "pregunta": "I have doubts",
+    "respuesta": "I'm here to solve them! 💬 Ask me about visas, interviews, documentation, payments... Or if you prefer personalized attention, click here 👉 https://wa.me/34640030604",
+    "tema": "Emocional",
+    "sugerencias": [
+      "How does the visa work?",
+      "What certificates do I need?",
+      "Do you help with flights?"
+    ]
+  },
+  {
+    "pregunta": "I'm afraid to go",
+    "respuesta": "🫂 I understand you. Traveling to another country is scary at first, but you'll be backed by our team and have constant support. I promise it'll be worth it!",
+    "tema": "Emocional",
+    "sugerencias": [
+      "Is there support if I have a problem?",
+      "Can I contact the sponsor?",
+      "How is life at the camp?"
+    ]
+  },
+  {
+    "pregunta": "thank you",
+    "respuesta": "You're welcome! 😊 If any other questions arise, I'll be here. You can also write to us on WhatsApp if you prefer to talk to an advisor 👉 https://wa.me/34640030604",
+    "tema": "Despedida",
+    "sugerencias": [
+      "How do I register?",
+      "What documents do I need?",
+      "What happens if I don't get hired?"
+    ]
+  },
+  {
+    "pregunta": "goodbye",
+    "respuesta": "See you soon! 👋 I hope you have an incredible experience with Global Leaders. If you need anything else, you can find me here.",
+    "tema": "Despedida",
+    "sugerencias": []
+  },
+  {
+    "pregunta": "see you",
+    "respuesta": "Sure! 😄 I'll be waiting to help you whenever you want to continue exploring the program.",
+    "tema": "Despedida",
+    "sugerencias": []
+  },
+  {
+    "pregunta": "how do I register",
+    "respuesta": "📝 Getting started is very easy! Complete your registration here 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\nIf you meet the age and availability requirements, we'll send you a new form to learn about your experience and talents.",
+    "tema": "Proceso",
+    "sugerencias": [
+      "What do I need to start?",
+      "When is it cheaper to register?",
+      "Until when can I register?"
+    ]
+  },
+  {
+    "pregunta": "I want to register",
+    "respuesta": "🎉 Perfect! I'll help you with your registration. Complete the form here 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\nIt's the first step towards your adventure in the United States!",
+    "tema": "Proceso",
+    "sugerencias": [
+      "What age do I need?",
+      "When is it cheaper to register?",
+      "What certificates do I need?"
+    ]
+  },
+  {
+    "pregunta": "what is the interview for",
+    "respuesta": "📋 We use the interview to prepare your report that will be sent to camp directors. We evaluate your availability, skills and English level to connect you with camps that best suit your profile and interests.",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "What do they evaluate in the interview?",
+      "How is the interview?",
+      "What happens after the interview?"
+    ]
+  },
+  {
+    "pregunta": "what happens after the interview",
+    "respuesta": "🚀 If your profile is approved, you move to the next step: preparing your application. You'll have support to make your presentation video and access to the matching platform with camps.",
+    "tema": "Entrevista",
+    "sugerencias": [
+      "What is the interview for?",
+      "How long does the whole process take?",
+      "What does the 150 € payment include?"
+    ]
+  },
+  {
+    "pregunta": "how and when do I get the visa",
+    "respuesta": "🏛️ Once hired by the camp, we send you all the documentation to go to the US Embassy in Madrid. The J-1 visa costs 185 USD and usually takes 5-10 days after the appointment.",
+    "tema": "Visado",
+    "sugerencias": [
+      "How much does the visa cost?",
+      "Where is the procedure done?",
+      "What documents do I need?"
+    ]
+  },
+  {
+    "pregunta": "until when can I register",
+    "respuesta": "⏰ You can register throughout the year, but remember that the earlier you do it, the better prices you get. Prices increase progressively depending on the registration date.\n\n📝 Register here: https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform",
+    "tema": "Costes",
+    "sugerencias": [
+      "When is it cheaper to register?",
+      "How do I register?",
+      "What payments do I need to make?"
+    ]
+  },
+  {
+    "pregunta": "how do I sign up",
+    "respuesta": "📋 Super easy! You just need to fill out this form 👉 https://docs.google.com/forms/d/1WVNm8wgD922b2Dqn4T74ImZFPizFYvSYSvE3JFX7alU/viewform\n\nIn just a few minutes you'll have taken the first step towards your experience in the US!",
+    "tema": "Proceso",
+    "sugerencias": [
+      "What documents do I need?",
+      "How much does the interview cost?",
+      "When is it cheaper to register?"
+    ]
+  },
+  {
+    "pregunta": "what is the whatsapp",
+    "respuesta": "📱 Our WhatsApp for direct contact is: +34 640 030 604\n\nOr you can write to us directly here 👉 https://wa.me/34640030604",
+    "tema": "Contacto",
+    "sugerencias": [
+      "I want to talk to someone",
+      "Do you have personalized attention?"
+    ]
+  },
+  {
+    "pregunta": "phone number",
+    "respuesta": "📞 For personalized attention, write to us on WhatsApp: +34 640 030 604\n\n👉 Direct link: https://wa.me/34640030604",
+    "tema": "Contacto", 
+    "sugerencias": [
+      "I want to talk to someone",
+      "How do I contact an advisor?"
+    ]
+  }
+]

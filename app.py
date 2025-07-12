@@ -7,9 +7,12 @@ import re
 app = Flask(__name__)
 CORS(app)
 
-# Carga el archivo JSON una vez al iniciar
+# Carga los archivos JSON una vez al iniciar
 with open("preguntas.json", "r", encoding="utf-8") as f:
-    base = json.load(f)
+    base_spanish = json.load(f)
+
+with open("questions_english.json", "r", encoding="utf-8") as f:
+    base_english = json.load(f)
 
 def convert_links_to_html(text):
     """Convierte enlaces en texto a hipervínculos HTML"""
@@ -32,16 +35,13 @@ def convert_links_to_html(text):
     
     return text
 
-@app.route("/chatbot", methods=["POST"])
-def chatbot():
-    datos = request.get_json()
-    pregunta_usuario = datos.get("message", "").lower()
-
+def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message):
+    """Procesa una consulta del chatbot usando la base de datos especificada"""
     mejor_puntaje = 0
     mejor_respuesta = ""
     sugerencias = []
 
-    for item in base:
+    for item in base_preguntas:
         pregunta_guardada = item["pregunta"].lower()
         puntaje = fuzz.token_set_ratio(pregunta_usuario, pregunta_guardada)
 
@@ -51,20 +51,54 @@ def chatbot():
             sugerencias = item.get("sugerencias", [])
 
     if mejor_puntaje < 60:
-        mejor_respuesta = "🤔 No tengo una respuesta clara para eso. Pero puedes preguntarme sobre visado, entrevistas, requisitos, pagos... O escribirnos por WhatsApp 👉 https://wa.me/34640030604"
-        sugerencias = [
-            "¿Cómo es la entrevista?",
-            "¿Qué documentos necesito?",
-            "¿Cuánto cuesta el programa?"
-        ]
+        mejor_respuesta = fallback_message
+        sugerencias = []
 
     # Convertir enlaces a HTML antes de enviar la respuesta
     mejor_respuesta_html = convert_links_to_html(mejor_respuesta)
 
-    return jsonify({
+    return {
         "respuesta": mejor_respuesta_html,
         "sugerencias": sugerencias
-    })
+    }
+
+@app.route("/chatbot", methods=["POST"])
+def chatbot_spanish():
+    """Endpoint para consultas en español"""
+    datos = request.get_json()
+    pregunta_usuario = datos.get("message", "").lower()
+    
+    fallback_message = "🤔 No tengo una respuesta clara para eso. Pero puedes preguntarme sobre visado, entrevistas, requisitos, pagos... O escribirnos por WhatsApp 👉 https://wa.me/34640030604"
+    
+    result = process_chatbot_query(pregunta_usuario, base_spanish, fallback_message)
+    
+    if not result["sugerencias"]:
+        result["sugerencias"] = [
+            "¿Cómo es la entrevista?",
+            "¿Qué documentos necesito?",
+            "¿Cuánto cuesta el programa?"
+        ]
+    
+    return jsonify(result)
+
+@app.route("/chatbot/en", methods=["POST"])
+def chatbot_english():
+    """Endpoint para consultas en inglés"""
+    datos = request.get_json()
+    pregunta_usuario = datos.get("message", "").lower()
+    
+    fallback_message = "🤔 I don't have a clear answer for that. But you can ask me about visas, interviews, requirements, payments... Or write to us on WhatsApp 👉 https://wa.me/34640030604"
+    
+    result = process_chatbot_query(pregunta_usuario, base_english, fallback_message)
+    
+    if not result["sugerencias"]:
+        result["sugerencias"] = [
+            "How is the interview?",
+            "What documents do I need?",
+            "How much does the program cost?"
+        ]
+    
+    return jsonify(result)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
