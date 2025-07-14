@@ -3,6 +3,7 @@ test_chatbot.py
 test_validation.py
 test_interface_multilingual.html
 test_endpoints.py
+test_rapidfuzz.py
 run_tests.sh
 faqs.txt
 preguntas_organized.json

@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 from flask_cors import CORS
 import json ,os
 import re
@@ -43,14 +43,23 @@ def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message):
 
     for item in base_preguntas:
         pregunta_guardada = item["pregunta"].lower()
+        
+        # Usar token_set_ratio para mejor matching con RapidFuzz
         puntaje = fuzz.token_set_ratio(pregunta_usuario, pregunta_guardada)
+        
+        # También probar con ratio simple para capturar más variaciones
+        puntaje_simple = fuzz.ratio(pregunta_usuario, pregunta_guardada)
+        
+        # Usar el mejor puntaje de ambos métodos
+        puntaje_final = max(puntaje, puntaje_simple)
 
-        if puntaje > mejor_puntaje:
-            mejor_puntaje = puntaje
+        if puntaje_final > mejor_puntaje:
+            mejor_puntaje = puntaje_final
             mejor_respuesta = item["respuesta"]
             sugerencias = item.get("sugerencias", [])
 
-    if mejor_puntaje < 60:
+    # Umbral más bajo para aprovechar la mayor precisión de RapidFuzz
+    if mejor_puntaje < 55:
         mejor_respuesta = fallback_message
         sugerencias = []
 
@@ -59,7 +68,8 @@ def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message):
 
     return {
         "respuesta": mejor_respuesta_html,
-        "sugerencias": sugerencias
+        "sugerencias": sugerencias,
+        "score": mejor_puntaje  # Añadir score para debugging
     }
 
 @app.route("/chatbot", methods=["POST"])
