@@ -8,10 +8,28 @@ git clone https://github.com/LugoDv/chatbot-flask.git
 cd chatbot-flask
 ```
 
-2. **Genera certificados SSL** (para desarrollo/testing):
-```bash
-./generate_ssl.sh
-```
+2. **Genera certificados SSL**:
+
+   **Para desarrollo/testing local:**
+   ```bash
+   ./generate_ssl.sh -d
+   ```
+
+   **Para servidor con IP pública (sin dominio):**
+   ```bash
+   # Ejemplo: si tu servidor tiene IP 203.0.113.45
+   ./generate_ssl.sh -i 203.0.113.45
+   ```
+
+   **Para servidor con dominio (Let's Encrypt):**
+   ```bash
+   # Ejemplo: si tu dominio es chatbot.tuempresa.com
+   ./generate_ssl.sh -p chatbot.tuempresa.com
+   ```
+
+   **Requisitos según el caso:**
+   - **IP pública**: Solo necesitas la IP de tu servidor
+   - **Dominio**: El dominio debe apuntar a tu servidor + puertos 80/443 abiertos
 
 3. **Ejecuta con Docker Compose**:
 ```bash
@@ -40,16 +58,49 @@ curl -X POST https://localhost:8443/chatbot \
 
 ## Configuración SSL
 
-### Certificados de desarrollo
-Los certificados auto-firmados son generados automáticamente con `generate_ssl.sh`.
-
-### Certificados de producción
-Para producción, usa certificados reales de Let's Encrypt:
+### 1. Servidor con IP pública (sin dominio) - MÁS COMÚN PARA APIs
 ```bash
-sudo apt install certbot
-sudo certbot certonly --standalone -d tu-dominio.com
-cp /etc/letsencrypt/live/tu-dominio.com/fullchain.pem ssl/cert.pem
-cp /etc/letsencrypt/live/tu-dominio.com/privkey.pem ssl/key.pem
+# Usa la IP pública de tu servidor
+./generate_ssl.sh -i TU_IP_PUBLICA
+
+# Ejemplo:
+./generate_ssl.sh -i 203.0.113.45
+```
+
+**Ventajas:**
+- ✅ No necesitas dominio
+- ✅ Funciona inmediatamente
+- ✅ Perfecto para APIs
+
+**Uso:**
+- URL: `https://203.0.113.45:8443/chatbot`
+- Los clientes deben usar `-k` con curl o aceptar certificado auto-firmado
+
+### 2. Certificados de desarrollo local
+```bash
+./generate_ssl.sh -d
+```
+
+### 3. Servidor con dominio (Let's Encrypt)
+```bash
+./generate_ssl.sh -p tu-dominio.com
+```
+
+**Solo si tienes un dominio que apunte a tu servidor.**
+
+### Renovación automática
+Para renovar automáticamente los certificados, agrega esto al crontab:
+```bash
+# Editar crontab
+crontab -e
+
+# Agregar esta línea (renovar cada 12 horas)
+0 0,12 * * * /ruta/a/tu/proyecto/renew_ssl.sh tu-dominio.com
+```
+
+O usar el script de renovación manualmente:
+```bash
+./renew_ssl.sh tu-dominio.com
 ```
 
 ## Comandos útiles

@@ -1,22 +1,48 @@
-# 🤖 Chatbot Global Leaders - Multiidioma
+# 🚀 Chatbot Global Leaders - Production Ready
 
-Chatbot inteligente para responder preguntas sobre el programa de intercambio Global Leaders en **español** e **inglés**.
+## Descripción
+API chatbot multiidioma (Español/English) para el programa Global Leaders USA. Implementado con Flask, RapidFuzz y Docker con SSL/HTTPS.
 
-## 🌍 Idiomas Disponibles
+## Características principales
+- � **Dual idioma**: Español y English
+- ⚡ **Rendimiento optimizado**: RapidFuzz para búsqueda fuzzy
+- � **HTTPS**: SSL/TLS configurado
+- 🐳 **Docker**: Containerizado con nginx reverse proxy
+- 📊 **33 preguntas** en cada idioma
+- 💨 **Respuestas rápidas**: < 100ms promedio
 
-- 🇪🇸 **Español**: 54 preguntas y respuestas
-- 🇺🇸 **English**: 54 preguntas y respuestas
+## Despliegue rápido
 
-## 🚀 Características
+### 1. Clonar repositorio
+```bash
+git clone https://github.com/LugoDv/chatbot-flask.git
+cd chatbot-flask
+```
 
-- ✅ **Endpoints separados** para cada idioma
-- ✅ **Búsqueda ultra-rápida** con RapidFuzz (10x más rápido)
-- ✅ **Matching inteligente** con doble algoritmo (token_set + ratio)
-- ✅ **API REST** con Flask
-- ✅ **CORS habilitado** para integraciones web
-- ✅ **Hipervínculos HTML** para WhatsApp y formularios
-- ✅ **Respuestas contextuales** y sugerencias
-- ✅ **Rendimiento optimizado** (<1ms por consulta)
+### 2. Generar certificados SSL
+```bash
+# Para servidor con IP pública (más común)
+./generate_ssl.sh -i TU_IP_PUBLICA
+
+# Para servidor con dominio
+./generate_ssl.sh -p tu-dominio.com
+
+# Para desarrollo local
+./generate_ssl.sh -d
+```
+
+### 3. Desplegar
+```bash
+docker-compose up -d --build
+```
+
+### 4. Probar
+```bash
+curl -k https://TU_IP:8443/health
+curl -X POST -H "Content-Type: application/json" \
+  -d '{"message": "hola"}' \
+  -k https://TU_IP:8443/chatbot
+```
 
 ## 📋 Categorías Cubiertas
 
@@ -69,37 +95,41 @@ python app.py
 }
 ```
 
-## 🧪 Testing
+## Endpoints de la API
 
-### Test Automatizado:
+| Endpoint | Método | Descripción |
+|----------|---------|-------------|
+| `/chatbot` | POST | Chatbot en español |
+| `/chatbot/en` | POST | Chatbot en inglés |
+| `/health` | GET | Health check |
+
+## Ejemplo de uso
+
+### Español
 ```bash
-# Probar que los archivos JSON son válidos
-python -c "import json; print('✅ OK')"
-
-# Probar endpoints (requiere servidor activo)
-python test_endpoints.py
+curl -X POST https://tu-servidor:8443/chatbot \
+  -H "Content-Type: application/json" \
+  -d '{"message": "¿Cómo me inscribo?"}'
 ```
 
-### Test Manual:
+### English
 ```bash
-# Iniciar servidor
-python app.py
-
-# Abrir en navegador
-open test_interface_multilingual.html
+curl -X POST https://tu-servidor:8443/chatbot/en \
+  -H "Content-Type: application/json" \
+  -d '{"message": "How to register?"}'
 ```
 
-### Test con cURL:
-```bash
-# Endpoint español
-curl -X POST -H "Content-Type: application/json" \
-  -d '{"message":"hola"}' \
-  http://localhost:5000/chatbot
-
-# Endpoint inglés
-curl -X POST -H "Content-Type: application/json" \
-  -d '{"message":"hello"}' \
-  http://localhost:5000/chatbot/en
+### Respuesta
+```json
+{
+  "respuesta": "📝 Para inscribirte debes registrarte en línea...",
+  "score": 85.5,
+  "sugerencias": [
+    "¿Qué requisitos necesito?",
+    "¿Cuánto cuesta el programa?",
+    "¿Cuándo son las fechas?"
+  ]
+}
 ```
 
 ## 📁 Estructura de Archivos
@@ -130,3 +160,50 @@ PORT=5000  # Puerto del servidor
 **Estado:** ✅ Listo para producción  
 **Cobertura:** 100% de FAQ cubierto en ambos idiomas  
 **Endpoints:** 🇪🇸 `/chatbot` | 🇺🇸 `/chatbot/en`
+
+## Configuración
+
+### Puertos
+- **8080**: HTTP (redirige a HTTPS)
+- **8443**: HTTPS (principal)
+
+### SSL
+- **IP pública**: Certificados auto-firmados
+- **Dominio**: Let's Encrypt automático
+- **Desarrollo**: Certificados locales
+
+## Tecnologías
+- **Backend**: Flask 3.1.1
+- **Fuzzy Search**: RapidFuzz 3.10.1
+- **Proxy**: nginx Alpine
+- **Container**: Docker + Docker Compose
+- **SSL**: OpenSSL / Let's Encrypt
+
+## Archivos principales
+- `app.py` - Aplicación Flask principal
+- `questions.json` - Base de datos español
+- `questions_english.json` - Base de datos inglés
+- `nginx.conf` - Configuración proxy
+- `docker-compose.yml` - Orquestación containers
+- `generate_ssl.sh` - Script certificados SSL
+
+## Comandos útiles
+```bash
+# Ver logs
+docker-compose logs -f
+
+# Reiniciar
+docker-compose restart
+
+# Parar
+docker-compose down
+
+# Actualizar
+git pull && docker-compose up -d --build
+```
+
+## Licencia
+Uso interno - Global Leaders USA
+
+## Soporte
+Para soporte técnico, contactar al equipo de desarrollo.

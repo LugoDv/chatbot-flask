@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+Thumbs.db
+test_*
+run_tests.sh
+faqs.txt
+preguntas_organized.json
+.git/
+.gitignore
+# Archivos de desarrollo adicionales
+README.md
+README-DEPLOY.md
+TESTING_GUIDE.md
+PORTS_CONFIG.md
+# Mantener archivos SSL fuera del contenedor (se montan como volumen)
+ssl/

@@ -4,9 +4,22 @@ test_validation.py
 test_interface_multilingual.html
 test_endpoints.py
 test_rapidfuzz.py
+test_https.html
+test_interface.html
+test_local.sh
 run_tests.sh
+tests_production.py
 faqs.txt
 preguntas_organized.json
+preguntas_new.json
+
+# Documentación de desarrollo
+TESTING_GUIDE.md
+TESTING_LOCAL.md
+DEPLOY_CHECKLIST.md
+IP_SSL_GUIDE.md
+PORTS_CONFIG.md
+FAQ´s Global Leaders.txt
 
 # Entornos virtuales
 venv/
@@ -26,5 +39,5 @@ ssl/
 # Logs de desarrollo
 *.log
 
-# Docker
-.dockerignore
+# Scripts de renovación (se generan automáticamente)
+renew_ssl.sh
