@@ -19,7 +19,7 @@ def convert_links_to_html(text):
     # Convertir enlaces de WhatsApp
     text = re.sub(
         r'(https://wa\.me/[0-9]+)',
-        r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: underline; font-weight: bold;">📱 Contactar por WhatsApp</a>',
+        r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: underline; font-weight: bold;">📱 WhatsApp</a>',
         text
     )
     
