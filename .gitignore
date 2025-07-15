@@ -26,6 +26,12 @@ venv/
 __pycache__/
 *.pyc
 
+# Certificados SSL (los reales se generan en el servidor)
+ssl/
+*.pem
+*.key
+*.crt
+
 # Archivos de sistema
 .DS_Store
 Thumbs.db
