@@ -14,28 +14,44 @@ with open("preguntas.json", "r", encoding="utf-8") as f:
 with open("questions_english.json", "r", encoding="utf-8") as f:
     base_english = json.load(f)
 
-def convert_links_to_html(text):
+def convert_links_to_html(text, language="es"):
     """Convierte enlaces en texto a hipervínculos HTML"""
-    # Convertir enlaces de WhatsApp
-    text = re.sub(
-        r'(https://wa\.me/[0-9]+)',
-        r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: underline; font-weight: bold;">📱 Contactar por WhatsApp</a>',
-        text
-    )
+    # Primero verificar si ya contiene enlaces HTML para evitar doble procesamiento
+    if '<a href=' in text:
+        return text
     
-    # Convertir enlaces de Google Forms
-    text = re.sub(
-        r'(https://docs\.google\.com/forms/d/[A-Za-z0-9_-]+/[^\s]*)',
-        r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: underline; font-weight: bold;">📝 Formulario de inscripción</a>',
-        text
-    )
+    # Convertir enlaces de WhatsApp según el idioma
+    if language == "en":
+        text = re.sub(
+            r'(https://wa\.me/[0-9]+)',
+            r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: underline; font-weight: bold;">📱 Contact WhatsApp</a>',
+            text
+        )
+        # Convertir enlaces de Google Forms
+        text = re.sub(
+            r'(https://docs\.google\.com/forms/d/[A-Za-z0-9_-]+/[^\s]*)',
+            r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: underline; font-weight: bold;">📝 Registration Form</a>',
+            text
+        )
+    else:
+        text = re.sub(
+            r'(https://wa\.me/[0-9]+)',
+            r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #25D366; text-decoration: underline; font-weight: bold;">📱 Contactar por WhatsApp</a>',
+            text
+        )
+        # Convertir enlaces de Google Forms
+        text = re.sub(
+            r'(https://docs\.google\.com/forms/d/[A-Za-z0-9_-]+/[^\s]*)',
+            r'<a href="\1" target="_blank" rel="noopener noreferrer" style="color: #1a73e8; text-decoration: underline; font-weight: bold;">📝 Formulario de inscripción</a>',
+            text
+        )
     
     # Convertir saltos de línea a <br>
     text = text.replace('\n', '<br>')
     
     return text
 
-def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message):
+def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message, language="es"):
     """Procesa una consulta del chatbot usando la base de datos especificada"""
     mejor_puntaje = 0
     mejor_respuesta = ""
@@ -64,7 +80,7 @@ def process_chatbot_query(pregunta_usuario, base_preguntas, fallback_message):
         sugerencias = []
 
     # Convertir enlaces a HTML antes de enviar la respuesta
-    mejor_respuesta_html = convert_links_to_html(mejor_respuesta)
+    mejor_respuesta_html = convert_links_to_html(mejor_respuesta, language)
 
     return {
         "respuesta": mejor_respuesta_html,
@@ -80,7 +96,7 @@ def chatbot_spanish():
     
     fallback_message = "🤔 No tengo una respuesta clara para eso. Pero puedes preguntarme sobre visado, entrevistas, requisitos, pagos... O escribirnos por WhatsApp 👉 https://wa.me/34640030604"
     
-    result = process_chatbot_query(pregunta_usuario, base_spanish, fallback_message)
+    result = process_chatbot_query(pregunta_usuario, base_spanish, fallback_message, "es")
     
     if not result["sugerencias"]:
         result["sugerencias"] = [
@@ -99,7 +115,7 @@ def chatbot_english():
     
     fallback_message = "🤔 I don't have a clear answer for that. But you can ask me about visas, interviews, requirements, payments... Or write to us on WhatsApp 👉 https://wa.me/34640030604"
     
-    result = process_chatbot_query(pregunta_usuario, base_english, fallback_message)
+    result = process_chatbot_query(pregunta_usuario, base_english, fallback_message, "en")
     
     if not result["sugerencias"]:
         result["sugerencias"] = [
