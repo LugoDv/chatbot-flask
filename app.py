@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
-from rapidfuzz import fuzz
 from flask_cors import CORS
+from rapidfuzz import fuzz
+
 import json ,os
 import re
 
@@ -125,6 +126,18 @@ def chatbot_english():
         ]
     
     return jsonify(result)
+
+@app.route("/test", methods=["GET"])
+def test():
+    """Endpoint de prueba para verificar conectividad"""
+    return jsonify({
+        "message": "¡Chatbot funcionando correctamente!",
+        "status": "OK",
+        "endpoints": {
+            "spanish": "/chatbot",
+            "english": "/chatbot/en"
+        }
+    })
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
